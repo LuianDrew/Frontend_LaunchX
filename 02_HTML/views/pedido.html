@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pedido.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="../assets/img/IslaPAstelera.png" alt="" width="200px" height="200px">
+            <ul><a href="./index.html"> Menú </a> </ul>
+            <ul> <a href="">Servicio</a></ul>
+            <ul><a href="./pedido.html">Pide el tuyo</a></ul>
+            <ul><a href="">Contacto</a></ul>
+        
+    </nav>
+    <section class="conteiner_form">
+        <h3>¡Pedido de pastel!</h3>
+        <!-- 
+            Formulario de pedidos
+        El formulario debe de contener los datos de contacto del cliente que son: 
+        Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos.
+        
+        -->
+        <form action="" method="POST">
+            <div>
+                <!-- Datos del cliente-->
+                <input type="text" placeholder="Nombre" name="nombre">  <br>
+                <input type="tel" placeholder="0844321279" name="telefono"> <br>
+                <input type="email" placeholder="example@gmail.com" name="correo">  <br>
+            </div>
+            <div>
+                <!-- seleccion de sabores -->
+                <div>
+                    <label for="cantidadSabor">Combinaciones (una o dos)</label>    <br>
+                    <input type="number" name="cantidadSabor" min="1" max="2">  <br>
+                    <select name="sabor" id="pastel">
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Fresa">Fresa</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Zanahoria">Zanahoria</option>
+                        <option value="RedVelvet">Red Velvet</option>
+                        <option value="PayLimon">Pay de Limon</option>
+                    </select>   
+                </div>
+                <br>
+                 <!-- seleccion de adornos -->
+                 <div>
+                     <label for="cantidadCubiertas">Combinaciones (una o dos)</label>    <br>
+                     <input type="number" name="cantidadCubiertas" min="1" max="2">  <br>
+                     <select name="cubierta" id="cubiertas">
+                         <option value="Glaseado">Glaseado</option>
+                         <option value="Merengue">Merengue</option>
+                         <option value="Fondant">Fondant</option>
+                         <option value="Tematicos">Pasteles tematicos</option>
+                     </select>
+                 </div>
+            </div>
+            <div>
+                <!-- Descripción del pastel-->
+                <label for="descripcion">Descripción general del pastel</label> <br>
+                <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button>Hacer pedido</button>
+        </form>
+    </section> 
+    <footer style="border: 1px solid black; margin-top: 30px;">
+        <p>Direccion: Michoacan, Mexico CP: 00123</p>
+        <p>Telefono: 008004631</p>
+        <p>Correo: correoPasteles@gmail.com</p>
+        <dl>
+            <dt>Horarios</dt>
+            <dd>Lunes 10:00 AM - 05:00 PM</dd>
+            <dd>Martes 10:00 AM - 05:00 PM</dd>
+            <dd>Miercoles 10:00 AM - 05:00 PM</dd>
+            <dd>Jueves 10:00 AM - 05:00 PM</dd>
+            <dd>Viernes 10:00 AM - 05:00 PM</dd>
+        </dl>
+    </footer>
+</body>
+</html>

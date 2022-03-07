@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Administrador bienvenido</h2>
+    <section>
+        <h3>Estos son los sabores y cubiertas que hay disponibles</h3>
+        <!--    Sabores y adornos disponibles -->
+        <div style="margin-top:  20px;">
+            <label for="cantidadVainilla">Cantidad de pasteles de Vainilla:</label>
+            <input type="number" name="cantidadVainilla" placeholder="10">  <br>
+
+            <label for="cantidadFresa">Cantidad de pasteles de Fresa:</label>
+            <input type="number" name="cantidadFresa" placeholder="3">  <br>
+
+            <label for="cantidadChocolate">Cantidad de pasteles de Chocolate:</label>
+            <input type="number" name="cantidadChocolate" placeholder="5">  <br>
+
+            <label for="cantidadZanahoria">Cantidad de pasteles de Zanahoria:</label>
+            <input type="number" name="cantidadZanahoria" placeholder="10">  <br>
+
+            <label for="cantidadRedVelvet">Cantidad de pasteles de Red Velvet:</label>
+            <input type="number" name="cantidadRedVelvet" placeholder="8">  <br>
+
+            <label for="cantidadPayLimon">Cantidad de pasteles de Pay de Limon :</label>
+            <input type="number" name="cantidadPayLimon" placeholder="6">  <br>
+        </div>
+        <div style="margin-top:  20px;">
+            <label for="cantidadGlaseada">Cantidad de cubierta Glaseada:</label>
+            <input type="number" name="cantidadGlaseada" placeholder="10">  <br>
+
+            <label for="cantidadMerengue">Cantidad de cubierta Merengue:</label>
+            <input type="number" name="cantidadMerengue" placeholder="2">  <br>
+
+            <label for="cantidadFondant">Cantidad de cubierta Fondant:</label>
+            <input type="number" name="cantidadFondant" placeholder="4">  <br>
+
+            <label for="cantidadTematica">Cantidad de cubierta temática:</label>
+            <input type="number" name="cantidadTematica" placeholder="8">  <br>
+        </div>
+    </section>
+    <section>
+        <h3>Pedidos que han realizado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Nombre del Cliente</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Sabor(es)</th>
+                    <th>Cubierta(s)</th>
+                    <th>Estado:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Arturo</td>
+                    <td>arturo@gmail.com</td>
+                    <td>4498753202</td>
+                    <td>Red Velvet</td>
+                    <td> Glaseado</td>
+                    <td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pedro Martinez</td>
+                    <td>pedro@gmail.com</td>
+                    <td>4408753202</td>
+                    <td>Fresa, Chocolate</td>
+                    <td>Merengue</td>
+                    <td>En curso</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
