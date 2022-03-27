@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
+    
     <title>Mi vacunación</title>
 </head>
 <body>
-    <nav id="menu">
-        <h1 class="nav_tittle">Vaccination</h1>
-        <div class="text-menu">
+    <div class="container">
+        <div  class="navbar" >
+            <h1 class="nav_tittle">Vacunación</h1>
             <ul>
                 <li> <a href="">Database</a>   </li>
                 <li> <a href="">Education</a>    </li>
                 <li> <a href="">News</a>    </li>
                 <li> <a href="">Regulation</a>    </li>
-                <li class="navbutton"> <a href="">Hoax Buster</a></li>
+                <li class="navbutton"> <a href="">Hoax Buster</a> </li>
             </ul>
         </div>
-    </nav>
-
+    </div>
+    
     <header>
         
             <div class="parent">
@@ -33,28 +34,36 @@
                     </p>
 
                     <!-- iconos with text-->
-                    <div>
-                        <img src="../assets/icons/shield.ico" alt="shield_icon">
-                        <p> Best protection</p> 
+                    <div class="icontext1">
+                        <p> 
+                            <img src="../assets/icons/shield.ico" alt="shield_icon">
+                            Best protection
+                        </p> 
+                        <p>
                         <img src="../assets/icons/star.ico" alt="Star_icon">
-                        <p>Selected Vaccines</p>
+                            Selected Vaccines
+                        </p>
                     </div>
-                    <div>
-                        <img src="..\assets\icons\time_clock.ico" alt="">
-                        <p>Schedule your vaccinations</p>
+
+                    <div class="icontext2">
+                        <p>
+                            <img src="..\assets\icons\clock_time.ico" alt="">
+                            Schedule your vaccinations
+                        </p>
                     </div>
                 </div>
                 <div class="div2"> 
                     <img src="../assets/imgs/header_banner.jpeg" alt="" width="100%" height="100%">
                 </div>
             </div>
-            <div>
-                <form action="" method="">
-                    <label for="">Location</label>
-                    <input type="text">
-                    <label for="">Date</label>
-                    <input type="date">
-                    <label for="">Vaccine Type</label>
+
+            <div class="containerform">
+                <form action="" method="" class="formvaccine">
+                    <label for="location"> <img src="../assets/icons/location_map.ico" alt=""> Location:</label>
+                    <input type="text" name="location">
+                    <label for="date"> <img src="../assets/icons/date.ico" alt=""> Date:</label>
+                    <input type="date" name="date">
+                    <label for="vacunas"> <img src="../assets/icons/injection_vaccine.ico" alt=""> Vaccine Type</label>
                     <select name="vacunas" id="vacuna">
                         <option value="Moderna">Moderna</option>
                         <option value="Pfizer">Pfizer</option>
@@ -68,88 +77,160 @@
 
     <!-- Marcas de vacunas-->
     <section>       
-        
+        <div class="vacunas">
+            <div class="vacuna1"> <img src="../assets/imgs/AstraZeneca-Logo.png" alt="" width="70%" height="70%">   </div>
+            <div class="vacuna2"> <img src="../assets/imgs/Moderna_logo.png" alt=""   width="70%" height="70%">   </div>
+            <div class="vacuna3"> <img src="../assets/imgs/Pfizer.png" alt=""   width="70%" height="70%">   </div>
+            <div class="vacuna4"> <img src="../assets/imgs/Sinovac_logo.png" alt=""   width="70%" height="70%">   </div>
+            </div>
     </section>
 
     <!-- información sobre vacunacion-->
     <section>
-        <div>
-            <h4>Why should I vaccine?</h4>
+        <div class="infovacuna">
+            <h3>Why should I vaccine?</h3>
             <p>
                 In order to avoid any doubts about gettin the COVID-19 <br>
                 vaccine, identify the following 4 benefits of COVID-19 <br>
                 vaccination:
             </p>
         </div>
-        <div>
+        <div class="cards">
             <!-- InfoCards-->
-            <div>
-                <img src="" alt="">
-                <b><p>Minimize the spread of viruses</p></b> 
-                <br>
-                <p>Vaccine has been proven affective to prevent someone
-                    from gettin infected with Coronavirus
-                </p>
+            <div class="card1">
+                <div>
+                    <img src="../assets/imgs/spreadCard.png" alt="">
+                </div>
+                <div class="tituloCards">
+                    <b><p>Minimize the spread of viruses</p></b> 
+                </div>
+                <div class="paragrafCards">
+                    <br>
+                    <p>Vaccine has been proven affective to prevent someone
+                        from gettin infected with Coronavirus
+                    </p>
+
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <b><p>Forming antibodies</p></b> 
-                <br>
-                <p>
-                    COVID-19 vaccine proven to help shape antibody response for immunse system
-                </p>
+            <div  class="card2">
+                <div>
+                    <img src="../assets/imgs/protectionCard.png" alt="">
+                </div>
+                <div>
+                    <b><p>Forming antibodies</p></b> 
+                </div>
+                <div>
+                    <br>
+                    <p>
+                        COVID-19 vaccine proven to help shape antibody response for immunse system
+                    </p>
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <b><p>Protecting people nearby</p></b> 
-                <br>
-                <p>
-                    The benefits of COVID-19 vaccination are the vaccine that we get can alto
-                    help protect people around us
-                </p>
+            <div  class="card3">
+                <div>
+                    <img src="../assets/imgs/peopleCard.png" alt="">
+                </div>
+                <div>
+                    <b><p>Protecting people nearby</p></b> 
+                </div>
+                <div>
+                    <br>
+                    <p>
+                        The benefits of COVID-19 vaccination are the vaccine that we get can alto
+                        help protect people around us
+                    </p>
+                </div>
             </div>
             
-            <div>
-                <img src="" alt="">
-                <b><p>Creating group immunity</p></b> 
-                <br>
-                <p>
-                    COVID-19 vaccination is also beneficial for creatin group immunity or heard immunity
-                </p>
+            <div  class="card4">
+                <div>
+                    <img src="../assets/imgs/dataCard.png" alt="">
+                </div>
+                <div>
+                    <b><p>Creating group immunity</p></b> 
+                </div>
+                <div>
+                    <br>
+                    <p>
+                        COVID-19 vaccination is also beneficial for creatin group immunity or heard immunity
+                    </p>
+                </div>
             </div>
 
         </div>
     </section>
+
+    <!-- Seccion Información-->
     <section>
-        <div class="parent">
-            <div class="div1"> 
+        <div class="sectinfos">
+            <div class="sectinfo1"> 
                 <img src="../assets/imgs/peopleFacemask.jpg" alt="" width="100%" height="100%">
             </div>
-            <div class="div2"> 
-                <h2>Preparations Before Vaccine</h2>
+
+            <div class="sectinfo2"> 
+                <h3>Preparations Before Vaccine</h3>
+                <p>
+                    The success of vaccines is strongly influenced by the <br>
+                    strenth of the body's immune system. Therefore, there are <br>
+                    several things that can be tried to make the COVID-19 <br>
+                    vaccine work:
+                </p>
+                <div class="sectparent">
+                    <div class="sectcard1"> 
+                        <b><p>
+                            <img src="" alt="">
+                            Avoid alcoholic beverages
+                        </p></b>
+                    </div>
+                    <div class="sectcard2"> 
+                        <b><p>
+                            <img src="" alt="">
+                            Avoid stress
+                        </p></b>
+                    </div>
+                    <div class="sectcard3"> 
+                        <b><p>
+                            <img src="" alt="">
+                            Eat healthy food
+                        </p></b>
+                    </div>
+                    <div class="sectcard4"> 
+                        <b><p>
+                            <img src="" alt="">
+                            Get enough sleep
+                        </p></b>
+                    </div>
+                    <div class="sectcard5"> 
+                        <b><p>
+                            <img src="" alt="">
+                            Exercise or physical activity
+                        </p></b>
+                    </div>
+                    <div class="sectcard6"> 
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="parent">
-            <div class="div1"> 
-                <h2>Emergency Conctact</h2>
+
+            <div class="sectinfo3"> 
+                <img src="../assets/imgs/nurseFaceMasj.jpg" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="sectinfo4"> 
+                <h3>Emergency Conctact</h3>
                 <p>
                     Conctac one of the contacts below if you or your family feel <br>
                     unwell and have similar symptoms such as Covid-19, make <br>
                     sure you also take care of yourself before reporting to us: <br>
                 </p>
             </div>
-            <div class="div2"> 
-                <img src="../assets/imgs/nurseFaceMasj.jpg" alt="" width="100%" height="100%">
-            </div>
         </div>
     </section>
     <footer>
         <div>
-            <h3> Vaccination  </h3>
+            <h4> Vaccination  </h4>
             <p>
                 Our goal is to help the world
                 free from the ongoing pandemic
@@ -158,7 +239,7 @@
         <div>
             <!-- about -->
             <div>
-                <h3> About  </h3>
+                <h4> About  </h4>
                 <p><a href=""> About Us </a></p>
                 <p><a href=""> Features </a></p>
                 <p><a href=""> News & Blog </a></p>
@@ -166,7 +247,7 @@
 
             <!-- company -->
             <div>
-                <h3> Company  </h3>
+                <h4> Company  </h4>
                 <p><a href=""> How We Work </a></p>
                 <p><a href=""> Capital </a></p>
                 <p><a href=""> Security </a></p>
@@ -174,7 +255,7 @@
 
             <!-- Support -->
             <div>
-                <h3> Support  </h3>
+                <h4> Support  </h4>
                 <p><a href=""> FAQs </a></p>
                 <p><a href=""> Support Center </a></p>
                 <p><a href=""> Contact Us </a></p>

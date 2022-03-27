@@ -1,9 +1,56 @@
+.container{
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav_tittle{
     padding: 20px;
     font-size: 40px;
     color: #3252D0;
+    width: 130px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
 }
 
+
+
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: #3252D0;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.navbar ul li:hover::before{
+    width: 100%;
+}
 
 /* Header styles*/
 .parent {
@@ -14,6 +61,220 @@
     grid-row-gap: 0px;
     }
     
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url("../assets/imgs/background_grid.jpg");
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url("../assets/imgs/background_grid.jpg");
+
+ }
+
+/* */
+p{
+    margin: 90px;
+    font-family:Roboto, "sans-serif";
+    font-size: 18px;
+}
+h2{
+    margin: 90px;
+    color:#3252D0;
+    font-family: Roboto, "sans-serif";
+    font-size: 40px;
+    margin-bottom: -70px;
+}
+h3{
+    margin: 50px;
+    font-family: Roboto, "sans-serif";
+    color: #3252D0;
+    font-size: 28px;
+}
+img{
+    vertical-align: bottom;
+}
+
+.icontext1{
+    margin-top: -100px;
+}
+.icontext1 p{
+    margin: 40px;
+    padding: 30px;
+    display: inline-block;
+}
+.icontext2 p{
+    margin: 40px;
+    padding: 30px;
+    display: inline-block; 
+}
+
+.containerform{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.formvaccine{
+    margin-left: 23%;
+}
+
+.formvaccine img{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.formvaccine input{
+    padding: 8px;
+    margin: 10px;
+    border-color: #3252D0;
+}
+.formvaccine button{
+    padding: 10px;
+    margin: 10px;
+    background-color: #3252D0;
+    border-color: #ffffff;
+    width: 100px;
+}
+.formvaccine select{
+    padding: 8px;
+    margin: 10px;
+    width: 100px;
+}
+.formvaccine label{
+    font-family: Roboto, "sans-serif";
+    font-size: 18px;
+}
+
+.vacunas {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
     
+.vacuna1 {
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-left: 25%;
+}
+.vacuna2 { grid-area: 1 / 2 / 2 / 3; }
+.vacuna3 { grid-area: 1 / 3 / 2 / 4; }
+.vacuna4 { grid-area: 1 / 4 / 2 / 5; }
+
+.infovacuna{
+    padding: 5%;
+}
+.infovacuna h3{
+    font-size: 40px;
+}
+.infovacuna p{
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+    
+.card1 { 
+    margin: 10px;
+    grid-area: 1 / 1 / 2 / 2; 
+    border-style: solid;
+    border-color: #3252D0;
+    border-radius: 5%;
+    
+}
+.card2 { 
+    margin: 10px;
+    grid-area: 1 / 2 / 2 / 3;
+    border-style: solid;
+    border-color: #3252D0;
+    border-radius: 5%;
+}
+.card3 { 
+    margin: 10px;
+    grid-area: 1 / 3 / 2 / 4; 
+    border-style: solid;
+    border-color: #3252D0;
+    border-radius: 5%;
+}
+.card4 { 
+    margin: 10px;
+    grid-area: 1 / 4 / 2 / 5;
+    border-style: solid;
+    border-color: #3252D0;
+    border-radius: 5%;
+}
+
+.card1 img{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.card1  b > p{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.card1 p{
+    margin-top: -90px;
+}
+
+
+.card2 img{
+    margin-top: 50px;
+
+    margin-left: 20%;
+}
+.card2  b > p{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.card2 p{
+    margin-top: -90px;
+}
+
+.card3 img{
+    margin-top: 50px;
+
+    margin-left: 20%;
+}
+.card3  b > p{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.card3 p{
+    margin-top: -90px;
+}
+
+
+.card4 img{
+    margin-top: 50px;
+
+    margin-left: 20%;
+}
+.card4  b > p{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.card4 p{
+    margin-top: -90px;
+}
+
+.sectinfos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.sectinfo1 { grid-area: 1 / 1 / 2 / 2; }
+.sectinfo2 { grid-area: 1 / 2 / 2 / 3; }
+.sectinfo3 { grid-area: 2 / 2 / 3 / 3; }
+.sectinfo4 { grid-area: 2 / 1 / 3 / 2; }
